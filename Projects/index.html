@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang = "en">
+    <head>
+        <title>First program</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type = "text/javascript" language = "javascript">
+
+            function validator(){
+                if(document.samopelname.box.checked)
+                    alert("asd");
+                else
+                    alert('skdafh');
+            }
+
+            function person(name, age){
+                this.name = name;
+                this.age = age;
+                this.deathYears = ageUntilDeath;
+            }
+            function p(foo){
+                document.write(foo + "<br>");
+            }
+            function ageUntilDeath(){
+                return 65 - this.age; // this. is required
+            }
+
+
+            var shriram = new person("Shriram", 19);
+
+            //Object initializer
+            var yodda = {name:"Yodda", age:24};
+
+        </script>
+    </head>
+    <body>
+        <form>
+            <!--<input type = "button" value = "click me" onclick = "apples('sa', 'sb')">-->
+
+            User: <input type ="text" name = "user"/>
+            Pass: <input type="password"/>
+            <input type="submit" value ="submit"/>
+        </form>
+
+        <form name="shriram">
+            Usefgr: <input type ="text" name="Username">
+            Pasgfs: <input type="password" name="Password">
+            <input type="submit" value ="submit">
+        </form>
+
+        <form name="samopelname">
+             <input type ="checkbox" name="box">
+              <input type ="button" value="Press me" onclick="validator()">
+        </form>
+
+        <script type = "text/javascript" language="javascript">
+//              // golbal variable
+//            var glob = "df";
+//
+            function apples(x,y){
+		            document.write(x + " is better than "+y+"<br/>");
+                // local variable
+                var local = "dfs";
+                document.write(local+ "<br>");
+                var sev = 6;
+                return sev++;
+            }
+//
+//            function ad(x="s"){
+//                    alert(x);
+//            }
+////            ad();
+////            ad("2");
+//
+//            document.write("<br> " + glob + "<br>"+ apples(2,3) + "<br>");
+//
+//            var seventy = 70; var twenty = 20;
+//
+//            if(seventy > twenty){
+//                document.write(true);
+//                if(glob === "df" && 12 <23){
+//                    twenty = 21;
+//                    document.write("<br>" + twenty + "<br>");
+//                }
+//            }else
+//                document.write(false);
+//
+//            switch(seventy){
+//                case 34:
+//                    document.write("This is thirtyfour");
+//                    break;
+//                case 70:
+//                    document.write("this is seventy");
+//                    break;
+//                default:
+//                    document.write("default");
+//            }
+//
+//            for(x = 0; x < 10; x++){
+//                document.write(x + "<br>");
+//            }
+//
+//            while(x < 20){
+//                document.write(x++ + "<br>");
+//            }
+//            // Also do-while loops
+
+
+            // Objects
+
+//            var godofGods = "Narayana";
+//            document.write(godofGods.length+"<br>");
+//
+//            //Objects instantiated in the head element
+//            document.write(shriram.name+"<br>");
+//            document.write(yodda.age+"<br>");
+//            document.write(shriram.deathYears() + "<br>");
+//
+//            var people = new Array(shriram, yodda, godofGods);
+//
+//            document.write(people[1].name+ "<br>");
+
+//            var gods = new Array(3);
+//
+//            gods[0] = "Vayu";
+//            gods[1] = "Indra"; gods[2] = "Yama";
+//
+//            // Variable capacity array
+//            var scripture = new Array();
+//            scripture[1] = "Vishnu Sahasranama"; scripture[3] = "Bhagavad Gita";
+//            document.write(scripture + "<br> Length of scripture:" + scripture.length + "<br>");
+//
+//            var godandscripture = scripture.concat(gods);
+//            document.write(godandscripture.join(" - ") + "<br>"); //join() returns a string
+//            // pop() removes the last element
+//            godandscripture.pop();
+//            var string1 = godandscripture.join("  ");
+//            document.write(string1);
+//
+//            godandscripture.push("Lakshmi");
+//            godandscripture.sort();
+//            document.write(godandscripture.reverse());
+
+//            var pie = prompt("Enter a pie:", "");
+//            document.write(pie + "<br>");
+
+//            var some = new Array(2);
+//
+//            for(i = 0; i<some.length; ++i){
+//                some[i] = prompt("Enter something:", "enter your text here");
+//            }
+//            document.write(some);
+
+            // Like a map
+//            var foods = new Array();
+//            foods["vada"] = "myfav";
+//            foods["idli"] = "liked when hot";
+//
+//            document.write(foods.idli + "<br>");
+
+//            var n = prompt("Enter a number", "");
+//            var answer = Math.sqrt(n);
+//            alert(answer);
+
+//            function printTime(){
+//                var now = new Date();
+//                var hour = now.getHours();
+//                var mins = now.getMinutes();
+//                var sec = now.getSeconds();
+//                document.write(hour+":"+mins+":"+sec+"<br>");
+//            }
+//
+//            setInterval("printTime()", 2000);
+
+            var x = document.shriram.Username.name;
+            //Same as above var x = document.forms[1].elements[0].name;
+            document.write("<br>"+x);
+
+        </script>
+
+    </body>
+</html>
