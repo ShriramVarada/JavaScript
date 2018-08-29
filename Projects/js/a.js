@@ -99,9 +99,54 @@ alert(window.location);
 // The topmost object in the Document Object Model (or DOM) is the
 // document object. It represents the web page loaded into the current
 // browser window or tab.
-var num = 8.34;
+var num = 8.34, title;
 document.write(num.toPrecision(2) + "<br>");
 
 var randomNUm = Math.floor(Math.random()*10 + 1);
 var ele = document.getElementById('sample');
-ele.innerHTML = '<h4> Random Number </h4><br><p> ' + randomNUm + ' </p>';
+document.write("<br><br>"+ ele.innerHTML+'<br>')
+ele.innerHTML = '<h6> Random Number </h6><br><p> ' + randomNUm + ' </p>';
+
+num = 13.4;
+if (num > 17){
+  document.write('<br>' + num + ' is greater than 17');
+}else if (num > 12) {
+  document.write('<br>' + num + ' is greater than 12');
+}else {
+  document.write('<br>' + num + ' is less than 12 + <br>');
+}
+
+
+switch(num){
+  case 2:
+    title = '2';
+    break;
+  case 6:
+    title = '6';
+    break;
+  default:
+    title = 'default';
+}
+
+document.write(title);
+
+// if (document .getElementByid('header'))
+//   Found: do something
+// else {
+//   Not found: do somethi ng else
+
+var artist = '<br> Dasample';
+var artistA = artist || '';
+
+document.write(artistA + '<br>');
+
+var object = '' || { name : 'Object'}; // An object
+document.write(object.name);
+
+for (var i = 0; i < 10; ++i){
+  document.write('<br>' + i);
+}
+num = 0;
+while(num < 10){
+  document.write('<br>' + num++);
+}
