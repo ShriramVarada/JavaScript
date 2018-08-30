@@ -152,3 +152,23 @@ while(num < 10){
 }
 
 // !==, === strict operators
+
+// pg 188
+
+var sample = document.getElementById('one');
+var lei = document.querySelector('.badword');
+document.write(lei.firstChild);
+
+sample.className = 'cool';
+
+var elements = document.querySelectorAll('li[class]');
+
+var elements = document.getElementsByClassName('hot');
+
+var elements = document .getElementsByTagName('h1');
+
+num = 0;
+while(num < elements.length){
+  document.write(elements[num].textContent);
+  element[num++].className = 'headings1';
+}
