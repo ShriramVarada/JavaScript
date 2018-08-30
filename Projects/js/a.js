@@ -165,10 +165,10 @@ var elements = document.querySelectorAll('li[class]');
 
 var elements = document.getElementsByClassName('hot');
 
-var elements = document .getElementsByTagName('h1');
+var elements = document.getElementsByTagName('h1');
 
 num = 0;
 while(num < elements.length){
   document.write(elements[num].textContent);
-  element[num++].className = 'headings1';
+  elements[num++].className = 'headings1';
 }

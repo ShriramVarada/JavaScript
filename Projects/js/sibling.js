@@ -1,4 +1,4 @@
-// Pg 229
+// Pg 229, 231
 
 
 // Select the starting point and find its siblings.
@@ -10,8 +10,10 @@ var ul = document.getElementsByTagName('ul');
 // Change the values of the siblings' class attributes.
 prevItem.setAttribute('class', 'complete');
 nextItem.className = 'cool';
-
-document.write(prevItem.className);
+//prevItem.removeAttribute('class');
+if(prevItem.hasAttribute('class')){
+  document.write(prevItem.getAttribute('class'));
+}
 
 document.write(ul[0].lastChild.firstChild.nodeValue);
 // innerHTML, textContent, innerText
@@ -38,3 +40,4 @@ parent.removeChild(toRemove);
 
 // new1 = document.getElementsByTagName('BODY')[0];
 // document.write(new1.innerHTML);
+// insertBefore(newItem, target);
