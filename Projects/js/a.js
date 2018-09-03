@@ -1,3 +1,4 @@
+
 var msg = 'Sign up to receive our newsletter for 10% off!';
 var date = new Date(1996, 04, 15, 0, 23, 14);
 document.write(date.getMonth()+'<br>');

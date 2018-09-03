@@ -2,7 +2,7 @@
 type= 'module';
 var today = new Date();
 function printDate(idd){
-  document.write(idd.textContent);
+  document.write(idd.nodeValue);
 }
 
 
