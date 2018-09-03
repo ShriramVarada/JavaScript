@@ -200,14 +200,37 @@ function characleft(){
   elMsg.textContent= (10 - el.length) + ' characters left'
 }
 
+function buttonpressed(e, additem){
+  e.preventDefault();
+  var newItem = document.createElement('li');
+  var text = document.createTextNode(additem);
+  newItem.appendChild(text);
+  list.appendChild(newItem);
+}
+
 var edd = document.getElementById('context');
 var us = document.getElementById('username');
 var elMsg = document.getElementById('message');
 var close = document.getElementById('close');
 var daa = document.getElementById('da');
+var but = document.getElementById('addtm');
+var list = document.getElementById('items');
+
 close.addEventListener('mouseover', close2, true);
 daa.addEventListener('mouseover', close2, true);
 us.addEventListener('focus', checkUsername, false);
 us.addEventListener('keypress', characleft, false);
+but.addEventListener('click', function(e){
+  buttonpressed(e, 'aasd');
+}, false);
+
+list.addEventListener('DOMNodeInserted', count, false);
+
+function count(){
+  var count = items.children.length;
+  context.textContent = count;
+}
 
 window.addEventListener('load', setup, false);
+
+// pg 283-286
