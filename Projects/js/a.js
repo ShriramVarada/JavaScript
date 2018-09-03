@@ -173,3 +173,41 @@ while(num < elements.length){
   document.write(elements[num].textContent);
   elements[num++].className = 'headings1';
 }
+
+function setup(){
+  var ed = document.getElementById('username');
+  ed.focus();
+}
+
+function checkUsername(){
+  var el = us.value;
+  if(el.length < 5){
+    elMsg.textContent = 'enter above 5 characters';
+   }
+  else{
+    elMsg.textContent = '';
+  }
+}
+
+function close2(event){
+  //document.body.removeChild(ele);
+  edd.textContent += event.screenY + ' ' + event.screenX + ' ' + this.parentNode;
+}
+
+
+function characleft(){
+  var el = us.value;
+  elMsg.textContent= (10 - el.length) + ' characters left'
+}
+
+var edd = document.getElementById('context');
+var us = document.getElementById('username');
+var elMsg = document.getElementById('message');
+var close = document.getElementById('close');
+var daa = document.getElementById('da');
+close.addEventListener('mouseover', close2, true);
+daa.addEventListener('mouseover', close2, true);
+us.addEventListener('focus', checkUsername, false);
+us.addEventListener('keypress', characleft, false);
+
+window.addEventListener('load', setup, false);
