@@ -1,6 +1,6 @@
 /* Th i s script displays a greeting to the user based upon the current time.
 It is an example from JavaScript & jQuery book */
-
+type="module";
 var today= new Date();
 var hourNow = today.getHours();
 var greeting;
@@ -34,6 +34,6 @@ colors = ['white', 'black', ' custom ']; /* Or colors = new Array('white', 'blac
 
 document.write(colors[2]);
 
-export function hello(){
+function hello(){
   return "Hello";
 }
