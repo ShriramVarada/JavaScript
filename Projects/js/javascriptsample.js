@@ -33,3 +33,7 @@ var colors;
 colors = ['white', 'black', ' custom ']; /* Or colors = new Array('white', 'black', 'custom');*/
 
 document.write(colors[2]);
+
+export function hello(){
+  return "Hello";
+}
