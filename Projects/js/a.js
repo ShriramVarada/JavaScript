@@ -1,11 +1,12 @@
-
+// import {hello} from './js/sample2.js';
 var msg = 'Sign up to receive our newsletter for 10% off!';
-var date = new Date(1996, 04, 15, 0, 23, 14);
+var date = new Date(1996, 0o4, 15, 0, 23, 14);
 document.write(date.getMonth()+'<br>');
 
 function updateMessage() {
   var el = document.getElementById('df');
   el.textContent = msg;
+
 }
 
 updateMessage();
