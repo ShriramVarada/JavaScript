@@ -1,8 +1,8 @@
 //element.onevent = functionName;
 var today = new Date();
-function printDate(idd){
-  document.write(idd.firstChild.textContent);
-}
+// function printDate(idd){
+//   document.write(idd.firstChild.textContent);
+// }
 
 
 function random2(e, seed){
@@ -29,21 +29,25 @@ function random2(e, seed){
 // this.onload = printDate;
 // var d = document.getElementById('page');
 // d.onmouseover = printDate;
-//
-// //For older versions of IE
-// var idd = document.getElementById('id');
-// if(idd.addEventListener){
-//   idd.addEventListener('click', function(e){
-//     printDate(idd);
-//     random2(e, 'seed');
-//   }, false);
-// }else{
-//   idd.attachEvent('onmouseover', function() {
-//     document.write('IE8');
-//   });
-// }
 
+//For older versions of IE
+var idd = document.getElementById('id');
+if(idd.addEventListener){
+  idd.addEventListener('click', function(e){
+    //printDate(idd);
+    random2(e, 'seed');
+  }, false);
+}else{
+  idd.attachEvent('onmouseover', function() {
+    document.write('IE8');
+  });
+}
 
+function hello(){
+  para.textContent = "Hello";
+}
+
+var para = document.getElementById('content');
 $(document).ready(function(){
   $('li.hot').addClass('complete');
   //$('li:lt(2)').hide().delay(500).fadeIn(1500);
@@ -54,7 +58,7 @@ $(document).ready(function(){
   });
 
   //var $para = $('#content');
-  var para = document.getElementById('content');
+
 
   // $(`variable`) places the element so that it can be used as a jQuery obejct
   // $(para).append($('#four').html(function(){
@@ -66,10 +70,6 @@ $(document).ready(function(){
   $('h1#header').remove();
   // pg 318
 
-  $('#addButton').on('submit', function(e){
-    e.preventDefault();
-    
-  });
 
 });
 

@@ -1,9 +1,10 @@
-// pg 320, 322, 328, 336, 338, 344
+// pg 320, 322, 328, 336, 338, 344, 350, 351
+// pg 356, 361
 
 $(function(){
-  var s = '<li> soy sauce </li>'; // $ wraps an instance to a jQuery object
+  var $s = $('<li> soy sauce </li>'); // $ wraps an instance to a jQuery object
 
-  $('li:last').after(s);
+  $('li:last').after($s);
   //$('li').css('background', '#345abc')
   $('li.hot').removeClass('hot');
 
@@ -13,6 +14,7 @@ $(function(){
   // });
   //
   var $listitems = $('li');
+  var offset = $('#addButton').offset().top - $(window).height();
   // $('li h5').remove();
   //$listitems.children().children('span').remove();
   // var index = 0;
@@ -31,4 +33,20 @@ $(function(){
       para.innerHTML += $(this).children().length + '<br>'+$.isNumeric('123');
     })
   });
+
+  var $clonedlist = $('li').clone();
+  var $desc = $('input:text');
+
+  $('#addButton').on('click', function(e){ // Submit used for form elements
+    e.preventDefault();
+    para.textContent = $desc.val();
+    $desc.val('');
+    $('li').remove();
+    $clonedlist.width('1%');
+    $('p').after($clonedlist);
+
+  });
+
+  hello();
+
 });
