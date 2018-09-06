@@ -1,8 +1,7 @@
 //element.onevent = functionName;
-type= 'module';
 var today = new Date();
 function printDate(idd){
-  document.write(idd.nodeValue);
+  document.write(idd.firstChild.nodeValue);
 }
 
 
@@ -22,9 +21,9 @@ function random2(e, seed){
     e.returnValue = false;
   }
 
-  // document.write('<br>');
-  // Math.seedrandom(seed);
-  // document.write('<br>' + Math.random());
+  document.write('<br>');
+  Math.seedrandom(seed);
+  document.write('<br>' + Math.random());
 }
 
 //this.onload = printDate;
@@ -32,14 +31,20 @@ function random2(e, seed){
 // d.onmouseover = printDate;
 
 //For older versions of IE
-var idd = document.getElementById('id');
-if(idd.addEventListener){
-  idd.addEventListener('click', function(e){
-    printDate(idd);
-    random2(e, 'seed');
-  }, false);
-}else{
-  idd.attachEvent('onmouseover', function() {
-    document.write('IE8');
-  });
-}
+// var idd = document.getElementById('id');
+// if(idd.addEventListener){
+//   idd.addEventListener('click', function(e){
+//     printDate(idd);
+//     random2(e, 'seed');
+//   }, false);
+// }else{
+//   idd.attachEvent('onmouseover', function() {
+//     document.write('IE8');
+//   });
+// }
+//
+$('li.hot').addClass('complete');
+$('li:lt(2)').hide().fadeIn(1500);
+$('#two').on('click', function(){
+  $('#two').remove();
+});
