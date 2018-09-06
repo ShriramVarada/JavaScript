@@ -46,7 +46,7 @@ function random2(e, seed){
 
 $(document).ready(function(){
   $('li.hot').addClass('complete');
-  $('li:lt(2)').hide().delay(500).fadeIn(1500);
+  //$('li:lt(2)').hide().delay(500).fadeIn(1500);
 
   $('#two').on('click mouseover',':not(#four)', {status:'important'}, function(e){
     para.textContent += e.type + e.data.status;
@@ -65,6 +65,11 @@ $(document).ready(function(){
   $('li:contains("pine")').html('<h2>ad</h2>');
   $('h1#header').remove();
   // pg 318
+
+  $('#addButton').on('submit', function(e){
+    e.preventDefault();
+    
+  });
 
 });
 

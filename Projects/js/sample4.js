@@ -1,4 +1,4 @@
-// pg 320, 322, 328
+// pg 320, 322, 328, 336, 338, 344
 
 $(function(){
   var s = '<li> soy sauce </li>'; // $ wraps an instance to a jQuery object
@@ -16,10 +16,11 @@ $(function(){
   // $('li h5').remove();
   //$listitems.children().children('span').remove();
   // var index = 0;
-  $listitems.hide().each(function(index){
+  $listitems.eq(2).hide().each(function(index){
     $(this).delay(700*index).fadeIn(1500);
   });
 
+  var para = document.getElementById('content');
 
   $('li').on('click', function(){
     $(this).animate({
@@ -27,6 +28,7 @@ $(function(){
       paddingLeft: '+=80'
     }, 1500, function(){
       // $(this).remove();
+      para.innerHTML += $(this).children().length + '<br>'+$.isNumeric('123');
     })
   });
 });
