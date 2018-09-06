@@ -1,7 +1,7 @@
 //element.onevent = functionName;
 var today = new Date();
 function printDate(idd){
-  document.write(idd.firstChild.nodeValue);
+  document.write(idd.firstChild.textContent);
 }
 
 
@@ -26,11 +26,11 @@ function random2(e, seed){
   document.write('<br>' + Math.random());
 }
 
-//this.onload = printDate;
+// this.onload = printDate;
 // var d = document.getElementById('page');
 // d.onmouseover = printDate;
-
-//For older versions of IE
+//
+// //For older versions of IE
 // var idd = document.getElementById('id');
 // if(idd.addEventListener){
 //   idd.addEventListener('click', function(e){
@@ -42,9 +42,31 @@ function random2(e, seed){
 //     document.write('IE8');
 //   });
 // }
-//
-$('li.hot').addClass('complete');
-$('li:lt(2)').hide().fadeIn(1500);
-$('#two').on('click', function(){
-  $('#two').remove();
+
+
+$(document).ready(function(){
+  $('li.hot').addClass('complete');
+  $('li:lt(2)').hide().delay(500).fadeIn(1500);
+
+  $('#two').on('click mouseover',':not(#four)', {status:'important'}, function(e){
+    para.textContent += e.type + e.data.status;
+    $(this).remove();
+  });
+
+  //var $para = $('#content');
+  var para = document.getElementById('content');
+
+  // $(`variable`) places the element so that it can be used as a jQuery obejct
+  // $(para).append($('#four').html(function(){
+  //   return '<strong>dsf</strong>';
+  // }));
+
+  para.append($('li:lt(3)').text());
+  $('li:contains("pine")').html('<h2>ad</h2>');
+  $('h1#header').remove();
+  // pg 318
+
 });
+
+
+// pg 302
