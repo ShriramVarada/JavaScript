@@ -12,9 +12,9 @@ var ajaxReq = new XMLHttpRequest();
 // };
 
 function show2(data){
-  //document.getElementById('sad').innerHTML = data.events[0].location;
+  document.getElementById('sad').innerHTML = data.events[0].location;
   //document.write(JSON.parse(data));
-  $('#sad').load('index3.html #newitemButton');
+  //$('#sad').load('index3.html #newitemButton');
 
 }
 
@@ -24,6 +24,14 @@ $('#supporter a').on('click', function(e){
   $.get('test3.html', target, function(data){
     $('#gray').remove();
     $('#supporter').html(data);
+  });
+});
+
+$('#newitemForm').on('submit', function(e){
+  e.preventDefault();
+  var registerss = $('#newitemForm').serialize();
+  $.post('test3.html', registerss, function(data){
+    $('#newitemForm').html(data);
   });
 });
 
