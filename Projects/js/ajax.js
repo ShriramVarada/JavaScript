@@ -14,7 +14,7 @@ var ajaxReq = new XMLHttpRequest();
 function show2(data){
   document.getElementById('sad').innerHTML = data.events[0].location;
   //document.write(JSON.parse(data));
-  //$('#sad').load('index3.html #newitemButton');
+  $('#sad').load('index3.html #newitemButton');
 
 }
 
