@@ -20,7 +20,6 @@ function fail(msgError){
 }
 
 
-
 var des = document.getElementById('username');
 
 if(window.localStorage){
