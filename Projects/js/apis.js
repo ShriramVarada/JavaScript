@@ -19,9 +19,7 @@ function fail(msgError){
   console.log(msgError.code);
 }
 
-function GreetingController($scope){
-  $scope.greeting = 'dfs';
-}
+
 
 var des = document.getElementById('username');
 
