@@ -3,8 +3,8 @@ It is an example from JavaScript & jQuery book */
 
 var today = new Date()
 var hourNow = today.getHours()
-
-
+var greeting = 'n';
+var g;
 if (hourNow > 18) {
   greeting = 'Good evening!';
 }
