@@ -8,15 +8,15 @@ docd.className = docd.className.replace(/(^|\s+)no-js(\s+|$)/, '1');
 var modal = {
   center: function(){
 
-  };
+  },
 
   open :function(){
 
-  };
+  },
 
   close: function(){
 
-  };
+  },
 };
 
 // Photo viewer, Slider (pg 530)

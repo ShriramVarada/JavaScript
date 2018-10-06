@@ -3,12 +3,14 @@ var today = new Date();
 // function printDate(idd){
 //   document.write(idd.firstChild.textContent);
 // }
+require('jquery');
 
-
+document.write(message);
 function random2(e, seed){
   if(!e){
     e = window.event;
   }
+  
   var el = e.target || e.srcElement ;
   var parent = el.parentNode;
   var grandparent = parent.parentNode;
@@ -20,7 +22,7 @@ function random2(e, seed){
   }else{
     e.returnValue = false;
   }
-
+  
   document.write('<br>');
   Math.seedrandom(seed);
   document.write('<br>' + Math.random());
@@ -43,9 +45,6 @@ if(idd.addEventListener){
   });
 }
 
-function hello(){
-  para.textContent = "Hello";
-}
 
 var para = document.getElementById('content');
 $(document).ready(function(){
