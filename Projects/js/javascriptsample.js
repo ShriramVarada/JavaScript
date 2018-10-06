@@ -1,12 +1,12 @@
 /* Th i s script displays a greeting to the user based upon the current time.
 It is an example from JavaScript & jQuery book */
 
-var today= new Date();
-var hourNow = today.getHours();
-var greeting;
+var today = new Date()
+var hourNow = today.getHours()
+
 
 if (hourNow > 18) {
-  greeting= 'Good evening!';
+  greeting = 'Good evening!';
 }
 
 else if (hourNow > 12) {
@@ -14,14 +14,14 @@ else if (hourNow > 12) {
 }
 
 else if (hourNow > 0) {
-greeting = 'Good morni ng!';
+  greeting = 'Good morni ng!';
 }
 
 else {
-greeting = 'Welcome! ' ;
+  greeting = 'Welcome! ';
 }
 
-document.write( ' <h3>' +greeting + ' </ h3>');
+document.write(' <h3>' + greeting + ' </ h3>');
 
 var ed = document.getElementById('god');
 ed.textContent = 'Narayana' + 1;
@@ -34,6 +34,6 @@ colors = ['white', 'black', ' custom ']; /* Or colors = new Array('white', 'blac
 
 document.write(colors[2]);
 
-function hello(){
+function hello() {
   return "Hello";
 }

@@ -3,8 +3,10 @@ var today = new Date();
 // function printDate(idd){
 //   document.write(idd.firstChild.textContent);
 // }
-require('jquery');
+// @ts-check
 
+let message = 2;
+message = '3';
 document.write(message);
 function random2(e, seed){
   if(!e){
