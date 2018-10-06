@@ -1,12 +1,15 @@
+import { hello } from "./javascriptsample";
+
 //element.onevent = functionName;
 var today = new Date();
 // function printDate(idd){
 //   document.write(idd.firstChild.textContent);
 // }
-// @ts-check
+//import {hello} from './javascriptsample'
 
 let message = 2;
 message = '3';
+hello();
 document.write(message);
 function random2(e, seed){
   if(!e){
