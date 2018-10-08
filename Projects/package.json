@@ -4,6 +4,8 @@
   "description": "samples",
   "main": "index.js",
   "dependencies": {
+    "@types/seedrandom": "^2.4.27",
+    "seedrandom": "^2.4.4",
     "viewerjs": "^1.2.0"
   },
   "devDependencies": {

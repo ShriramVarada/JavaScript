@@ -34,6 +34,6 @@ colors = ['white', 'black', ' custom ']; /* Or colors = new Array('white', 'blac
 
 document.write(colors[2]);
 
-function hello() {
+export function hello() {
   return "Hello";
 }

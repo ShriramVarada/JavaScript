@@ -5,12 +5,14 @@ var today = new Date();
 // function printDate(idd){
 //   document.write(idd.firstChild.textContent);
 // }
-//import {hello} from './javascriptsample'
+var seedrandom = require("seedrandom");
+var rng = seedrandom('hello.');
+console.log(rng());
 
 let message = 2;
-message = '3';
+message = 5;
 hello();
-document.write(message);
+document.write(''+message);
 function random2(e, seed){
   if(!e){
     e = window.event;
@@ -29,7 +31,7 @@ function random2(e, seed){
   }
   
   document.write('<br>');
-  Math.seedrandom(seed);
+ // Math.seedrandom(seed);
   document.write('<br>' + Math.random());
 }
 
