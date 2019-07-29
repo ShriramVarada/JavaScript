@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "@types/seedrandom": "^2.4.27",
+    "jquery": "^3.4.1",
     "seedrandom": "^2.4.4",
     "viewerjs": "^1.2.0"
   },
