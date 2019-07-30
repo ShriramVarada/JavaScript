@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app = 'controllerAsExample'>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+
+    <title>Basic Function</title>
+  </head>
+  <body>
+    <h1 id='sample'>TravelWorthy</h1>
+    <div id='df' ng-controller="GreetingController as lo">
+      {{ lo.greeting }}
+    </div>
+
+    <ul>
+      <li id="fad" class='badword'> fad </li>
+      <li> adf </li>
+    </ul>
+    <p id="context" ></p>
+    <br> <br>
+    <h1 id="header">List King</h1>
+    <h2>Buy groceries</h2>
+    <ul id = 'items'>
+      <li id="one" class="hot"><em>{{ name }}</em>figs</li>
+      <li id="two" class="hot">pinenuts</li>
+      <li id="three" class="hot">honey</li>
+      <li id="four">balsamic vinegar</li>
+    </ul>
+    <input type="button" id="addtm" value="add item" />
+    <br> <br>
+
+    <div id="da"><label for='username'>Username: <span id='message'></span></label>
+      <input type="text" ng-model="name" id='username' pattern='[A-Za-z\s]+' required />
+      <input type="button" id='close' value="Close" />
+    </div>
+
+    <!-- <script src="js/a.js">
+
+    </script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/apis.js"></script>
+
+
+    <script type="text/javascript">
+
+      angular.module('controllerAsExample', []).controller('GreetingController', function(){
+        var todo = this;
+        todo.greeting = 'fs';
+      });
+
+    </script>
+
+    <!-- <script type="module">
+      import {hello} from "./js/sample2.js";
+      var idd = document.getElementById('context');
+      idd.textContent += hello();
+    </script> -->
+  </body>
+</html>

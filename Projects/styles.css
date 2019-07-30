@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Koshan';
+  src: url('Names of God/Images/KaushanScript-Regular.otf') format('opentype');
+}
+
+body {
+  font-family: arial;
+  color: rgb(174, 243, 23);
+  padding: 10px;
+  text-decoration: overline;
+  line-height: 1.9em;
+}
+
+h2 {
+  color: hsl(160, 50%, 40%);;
+  background-color: blue;
+  padding: inherit;
+  width: 19em;
+  height: 4em;
+  text-transform: capitalize;
+}
+
+h1+p{
+  color: rgb(25, 132, 145);
+  font-family: "Courier New", Georgia, times, serif;
+  font-style: italic;
+  max-width: 100em;
+  margin: 7em;
+  word-spacing: 1.5em;
+  overflow: scroll;
+  letter-spacing: 1.2em;
+}
+
+i{
+  font-family: Koshan;
+  color: rgb(23, 46, 12) !important;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+i{
+  color: pink;
+  font-size: 3em;
+}
+
+h1{
+  text-align: right;
+  background-color: black;
+  vertical-align:middle;
+  padding-bottom: 110px;
+  padding-top: 20px;
+}
+
+/* If the two selectors are identical,
+the latter of the two will take
+precedence. Here you can see
+the second i selector takes
+precedence over the first.
+
+If one selector is more specific
+than the others, the more
+specific rule will take precedence
+over more general ones. In this
+example:
+h1 is more specific than *
+p b is more specific than p
+p#intro is more specific than p
+
+You can add !important after
+any property value to indicate
+that it should be considered
+more important than other rules
+that apply to the same element. */
